@@ -31,3 +31,6 @@ to run and test the project please run the following respectively
   - hystrix fall back will be triggered
   - aggregate service will collect data from alive providers in our case besthotels service
   - our consumer will still gets the data of best hotels after all.
+  
+ # Future Improvements : 
+  - cover the solution with unit testing using JUnit 
