@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.maf.besthotels.domain.model.BestHotel;
+import com.maf.besthotels.repository.IATACode;
 import com.maf.besthotels.service.BestHotelsService;
-import com.maf.besthotels.util.IATACode;
 
 @RestController
 public class BestHotelsController {

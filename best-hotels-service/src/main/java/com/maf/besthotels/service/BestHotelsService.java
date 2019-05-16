@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.Collection;
 
 import com.maf.besthotels.domain.model.BestHotel;
-import com.maf.besthotels.util.IATACode;
+import com.maf.besthotels.repository.IATACode;
 
 public interface BestHotelsService {
 
