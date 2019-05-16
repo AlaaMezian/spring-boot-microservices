@@ -12,6 +12,5 @@ public class BestHotel {
 	private Double hotelRate;
 	private Double hotelFare;
 	private String roomAmenitites;
-//	private IATACode city;
 	
 }
