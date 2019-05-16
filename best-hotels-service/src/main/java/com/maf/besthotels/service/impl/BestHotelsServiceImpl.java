@@ -18,15 +18,6 @@ public class BestHotelsServiceImpl implements BestHotelsService {
 	private BestHotelsRepository bestHotelRepo;
 
 	public Collection<BestHotel> retriveBestHotels(LocalDate fromDate, LocalDate to, IATACode city, Integer numberOfAdults) {
-
-		// check if date is in local iso date format and if not convert it
-//        if(hotelRequest.getFromDate() instanceof Date)
-//        {
-//        	 LocalDate localDateFrom = hotelRequest.getFromDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-//        }
-//        if(hotelRequest.getToDate() instanceof Date) {
-//        	LocalDate localDateTo= hotelRequest.getToDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-//        }
 		return bestHotelRepo.findAll();
 
 	}
