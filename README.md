@@ -27,6 +27,9 @@ to run and test the project please run the following respectively
   - Aggregate Hotler Serivce 
   - Available Hotel Service (Consumer Service)
   
+  after luanching the project ,testing the main consumer service available hotel can be done through swagger at: 
+  http://localhost:8082/swagger-ui.html#/
+  
   please note that Shutting down any of the provider service won't effect the overwhole process ,as if crazy hotel service provider shut down ,the following will happen: 
   - hystrix fall back will be triggered
   - aggregate service will collect data from alive providers in our case besthotels service
