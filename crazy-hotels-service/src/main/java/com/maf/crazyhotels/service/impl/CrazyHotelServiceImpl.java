@@ -19,7 +19,6 @@ public class CrazyHotelServiceImpl implements CrazyHotelService{
 	
 	@Override
 	public Collection<CrazyHotel> retriveAllCrazyHotels(Instant fromDate, Instant to, IATACode city, Integer AdultsCount) {
-		// also use number of allowed to the filter the object  all is done throught stream api 
 		return crazyHotelsRepository.findAll();
 	}
 
