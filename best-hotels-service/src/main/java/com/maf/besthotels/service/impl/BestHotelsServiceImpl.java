@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import com.maf.besthotels.domain.model.BestHotel;
 import com.maf.besthotels.repository.BestHotelsRepository;
 import com.maf.besthotels.service.BestHotelsService;
-import com.maf.hotels.constants.IATACode;
+import com.maf.besthotels.util.IATACode;
 
 @Service
 public class BestHotelsServiceImpl implements BestHotelsService {

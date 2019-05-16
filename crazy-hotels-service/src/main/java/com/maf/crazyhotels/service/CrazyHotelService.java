@@ -4,7 +4,7 @@ import java.time.Instant;
 import java.util.Collection;
 
 import com.maf.crazyhotel.domain.model.CrazyHotel;
-import com.maf.hotels.constants.IATACode;
+import com.maf.crazyhotel.domain.model.IATACode;
 
 public interface CrazyHotelService {
   

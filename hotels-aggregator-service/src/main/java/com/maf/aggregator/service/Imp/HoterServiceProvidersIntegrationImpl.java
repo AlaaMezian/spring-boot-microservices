@@ -14,13 +14,13 @@ import org.springframework.stereotype.Service;
 
 import com.maf.aggregator.client.BestHotelsClient;
 import com.maf.aggregator.client.CrazyHotelClient;
+import com.maf.aggregator.constant.IATACode;
 import com.maf.aggregator.mapper.BestHotelToCustomHotelMapper;
 import com.maf.aggregator.mapper.CrazyHotelToCustomHotelMapper;
 import com.maf.aggregator.response.BestHotelResponse;
 import com.maf.aggregator.response.CrazyHotelResponse;
 import com.maf.aggregator.response.HotelCustomResponse;
 import com.maf.aggregator.service.HotelServiceProvidersIntegration;
-import com.maf.hotels.constants.IATACode;
 
 @Service
 public class HoterServiceProvidersIntegrationImpl implements HotelServiceProvidersIntegration {

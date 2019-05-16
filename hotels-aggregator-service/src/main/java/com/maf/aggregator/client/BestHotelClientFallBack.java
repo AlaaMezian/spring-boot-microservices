@@ -6,8 +6,8 @@ import java.util.Collections;
 
 import org.springframework.stereotype.Component;
 
+import com.maf.aggregator.constant.IATACode;
 import com.maf.aggregator.response.BestHotelResponse;
-import com.maf.hotels.constants.IATACode;
 
 @Component
 public class BestHotelClientFallBack implements BestHotelsClient{

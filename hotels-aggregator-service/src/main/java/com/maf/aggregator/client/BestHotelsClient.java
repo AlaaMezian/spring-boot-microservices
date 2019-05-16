@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.maf.aggregator.constant.IATACode;
 import com.maf.aggregator.response.BestHotelResponse;
-import com.maf.hotels.constants.IATACode;
 
 @FeignClient(name = "best-hotels-service" , fallback = BestHotelClientFallBack.class)
 public interface BestHotelsClient {

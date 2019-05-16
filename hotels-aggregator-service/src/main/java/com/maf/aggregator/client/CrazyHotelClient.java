@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.maf.aggregator.constant.IATACode;
 import com.maf.aggregator.response.CrazyHotelResponse;
-import com.maf.hotels.constants.IATACode;
 
 @FeignClient(name = "crazy-hotels-service" , fallback = CrazyHotelClientFallBack.class)
 public interface CrazyHotelClient {

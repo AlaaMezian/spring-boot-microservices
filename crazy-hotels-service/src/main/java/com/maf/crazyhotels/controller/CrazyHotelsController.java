@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.maf.crazyhotel.domain.model.CrazyHotel;
+import com.maf.crazyhotel.domain.model.IATACode;
 import com.maf.crazyhotels.service.CrazyHotelService;
-import com.maf.hotels.constants.IATACode;
 
 @RestController
 public class CrazyHotelsController {
