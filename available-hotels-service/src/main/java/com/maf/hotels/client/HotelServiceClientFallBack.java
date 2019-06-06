@@ -16,7 +16,6 @@ public class HotelServiceClientFallBack implements HotelsServiceClient {
 	public Collection<AvailableHotels> retriveBestHotels(LocalDate from, LocalDate toDate, IATACode city,
 			Integer numberOfAdults) {
 		
-		System.out.println(" Warning :  Using fallback method for calling Aggregate Hotel Service------->");
 		Collection<AvailableHotels>  collection = Collections.emptyList();
 		return collection;
 	}
