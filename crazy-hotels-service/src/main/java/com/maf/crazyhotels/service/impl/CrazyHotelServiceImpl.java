@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.maf.crazyhotel.domain.model.CrazyHotel;
 import com.maf.crazyhotel.domain.model.IATACode;
+import com.maf.crazyhotels.exception.BadRequest;
 import com.maf.crazyhotels.repository.CrazyHotelsRepository;
 import com.maf.crazyhotels.service.CrazyHotelService;
 
@@ -19,6 +20,9 @@ public class CrazyHotelServiceImpl implements CrazyHotelService{
 	
 	@Override
 	public Collection<CrazyHotel> retriveAllCrazyHotels(Instant fromDate, Instant to, IATACode city, Integer AdultsCount) {
+		if(to.isAfter(fromDate)) {
+			throw new BadRequest();
+		}
 		return crazyHotelsRepository.findAll();
 	}
 
