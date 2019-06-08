@@ -3,7 +3,6 @@ package com.maf.app;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.when;
 
-import java.util.Arrays;
 import java.util.Map;
 import java.util.stream.Stream;
 
@@ -43,6 +42,12 @@ public class BestHotelRepositoryTest {
 		when(bestHotelRepo.findById(1L)).thenReturn(testHotel);
 
 		assertThat(HotelRepository.get(1)).isEqualToComparingFieldByField(bestHotelRepo.findById(1L));
+	}
+	
+	@Test
+	public void givenValidInputStreamAsBestHotel_ThenCreateBestHotels() {
+		BestHotel testHotel = new BestHotel(1, "Hitlon", 4.0, 25.66, "Swna, Bean Bags , Double Size Bed");
+		assertThat(HotelRepository.get(1)).isEqualToComparingFieldByField(testHotel);
 	}
 
 }
