@@ -39,7 +39,6 @@ public class CrazyHotelsServiceTests {
 	@Before
 	public void test() {
 		MockitoAnnotations.initMocks(this);
-
 	}
 
 	@Test
