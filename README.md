@@ -18,7 +18,8 @@ in this solution i used spring boot and spring cloud to implement microservice a
  Implementating hystrix applied defensive programming strategy is essential, if besthotel service provider went down , our main service consumer won't go down and will not recive an error but instead hystrix will call a FallBack Command which will handle besthotel microservice fauiler.
 
 
-   
+   ![alt text](https://github.com/AlaaMezian/Maf-Task/blob/master/MicroServices%20(1).png)
+
   
 To run and test the project please run the following respectively 
   - Eruka Naming Server (must be first)
@@ -37,3 +38,4 @@ To run and test the project please run the following respectively
   
  # Future Improvements : 
   - cover the solution with unit testing using JUnit 
+  - add Load Balancing Ribbons to microservice .
