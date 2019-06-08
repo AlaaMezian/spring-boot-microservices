@@ -62,7 +62,6 @@ public class CrazyHotelsServiceTests {
 	public void testInvalidDate() {
 		crazyHotelServiceImpl.retriveAllCrazyHotels(Instant.now(),
 				Instant.now().plus(Duration.ofHours(5).plusMinutes(4)), IATACode.AUE, 3);
-
 	}
 
 }
