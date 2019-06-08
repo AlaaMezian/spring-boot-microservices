@@ -16,7 +16,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.maf.crazyhotel.domain.model.IATACode;
 import com.maf.crazyhotels.app.CrazyHotelsServiceApplication;
 
@@ -32,31 +31,19 @@ public class CrazyHotelControllerIntegrationTest {
 	@Autowired
 	private MockMvc mvc;
 
-	/*
-	 * the object mapper is needed if we want to serialize and send data with the
-	 * request
-	 */
-	@Autowired
-	private ObjectMapper objectMapper;
-
-
 	@Before
 	public void beforeRunningTests() {
 		MockitoAnnotations.initMocks(this);
 	}
 
 	@Test
-	public void testCrazyHotelsEndPointWhenFromAndToIsValid() {
+	public void testCrazyHotelsEndPointWhenFromAndToIsValid_thenReturn200() throws Exception {
 
-		try {
 			mvc.perform(get("/CrazyHotels")
 					.param("from", Instant.now().toString())
 					.param("to", Instant.now().minus(Duration.ofHours(5)).toString())
 					.param("city",IATACode.AUE.toString())
 					.param("adultsCount",new Integer(3).toString()).contentType("application/json")).andExpect(status().isOk());
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 	}
 	
 	@Test
