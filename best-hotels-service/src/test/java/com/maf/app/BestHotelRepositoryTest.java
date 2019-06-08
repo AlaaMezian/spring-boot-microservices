@@ -38,7 +38,7 @@ public class BestHotelRepositoryTest {
 	}
 
 	@Test
-	public void givenValidInputStreamAsBestHotel_ThenGetHotelById() {
+	public void givenValidInputStreamAsBestHotels_ThenGetHotelById() {
 
 		BestHotel testHotel = new BestHotel(1, "Hitlon", 4.0, 25.66, "Swna, Bean Bags , Double Size Bed");
 		when(bestHotelRepo.findById(1L)).thenReturn(testHotel);
@@ -47,13 +47,13 @@ public class BestHotelRepositoryTest {
 	}
 
 	@Test
-	public void givenValidInputStreamAsBestHotel_ThenCreateBestHotels() {
+	public void givenValidInputStreamAsBestHotels_ThenCreateBestHotels() {
 		BestHotel testHotel = new BestHotel(1, "Hitlon", 4.0, 25.66, "Swna, Bean Bags , Double Size Bed");
 		assertThat(HotelRepository.get(1)).isEqualToComparingFieldByField(testHotel);
 	}
 
 	@Test
-	public void givenValidInputStream_ThenFindAllBestHotels() {
+	public void givenValidInputStreamAsBestHotels_ThenFindAllBestHotels() {
 		Collection<BestHotel> hotels = new HashMap<Integer, BestHotel>() {
 			{
 				put(1, new BestHotel(1, "Hitlon", 4.0, 25.659, "Swna, Bean Bags , Double Size Bed"));
