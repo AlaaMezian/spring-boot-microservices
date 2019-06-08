@@ -27,9 +27,13 @@ public class BestHotelsRepository {
 		 **/
 		Stream<String> hotelsStream = Stream.of("1-Hitlon-4-25.659-Swna, Bean Bags , Double Size Bed",
 				"2-Four Seasons-4.5-36.2023-Table Lamp, Envelopes");
-		HotelRepsitory = hotelsStream.map(hotel -> {
+		HotelRepsitory = createBestHotels(hotelsStream);
+	}
+	
+	public static Map<Integer, BestHotel> createBestHotels(Stream<String> hotelsStream){
+		return hotelsStream.map(hotel -> {
 			String[] info = hotel.split("-");
-			return createBestHotels(new Integer(info[0]), info[1], new Double(info[2]), new Double(info[3]), info[4]);
+			return createBestHotel(new Integer(info[0]), info[1], new Double(info[2]), new Double(info[3]), info[4]);
 		}).collect(Collectors.toMap(BestHotel::getHotelId, bHotel -> bHotel));
 	}
 
@@ -43,7 +47,7 @@ public class BestHotelsRepository {
 	 * @param roomAmenities: String of amenities separated by comma
 	 * @return inserted best hotel object
 	 */
-	private static BestHotel createBestHotels(Integer id, String name, Double hotelRate, Double hotelFare,
+	private static BestHotel createBestHotel(Integer id, String name, Double hotelRate, Double hotelFare,
 			String roomAminities) {
 		BestHotel bestHotel = new BestHotel();
 		bestHotel.setHotelId(id);
