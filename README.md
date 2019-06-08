@@ -37,5 +37,5 @@ To run and test the project please run the following respectively
   - our consumer will still gets the data of best hotels after all.
   
  # Future Improvements : 
-  :ballot_box_with_check: cover the solution with unit testing using JUnit 
+  :heavy_check_mark: cover the solution with unit testing using JUnit 
   - add Load Balancing Ribbons to microservice .
