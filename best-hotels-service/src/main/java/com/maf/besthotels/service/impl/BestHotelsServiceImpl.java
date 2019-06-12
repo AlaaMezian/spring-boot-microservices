@@ -18,7 +18,7 @@ public class BestHotelsServiceImpl implements BestHotelsService {
 	private BestHotelsRepository bestHotelRepo;
 
 	public Collection<BestHotel> retriveBestHotels(BestHotelDTO bestHotelDto) {
-		if(bestHotelDto.getFromDate().isBefore(bestHotelDto.getTo())) {
+		if(bestHotelDto.getTo().isBefore(bestHotelDto.getFromDate())) {
 			throw new BadRequest("invalid from-to period");
 		}
 		return bestHotelRepo.findAll();

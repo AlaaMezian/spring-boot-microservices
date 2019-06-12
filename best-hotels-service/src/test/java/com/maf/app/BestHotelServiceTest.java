@@ -49,7 +49,7 @@ public class BestHotelServiceTest {
 			}
 		}.values();
 		when(bestHotelRepo.findAll()).thenReturn(hotels);
-		BestHotelDTO bestHotelTest = new BestHotelDTO(LocalDate.of(2018, 02, 20), LocalDate.of(2014, 02, 20), IATACode.AUE,
+		BestHotelDTO bestHotelTest = new BestHotelDTO(LocalDate.of(2014, 02, 20), LocalDate.of(2018, 02, 20), IATACode.AUE,
 				new Integer(3));
 		assertThat(bestHotelServiceImpl
 				.retriveBestHotels(bestHotelTest)
