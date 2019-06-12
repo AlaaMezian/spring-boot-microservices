@@ -1,13 +1,12 @@
 package com.maf.besthotels.service;
 
-import java.time.LocalDate;
 import java.util.Collection;
 
 import com.maf.besthotels.domain.model.BestHotel;
-import com.maf.besthotels.repository.IATACode;
+import com.maf.besthotels.dto.BestHotelDTO;
 
 public interface BestHotelsService {
 
-	public Collection<BestHotel> retriveBestHotels(LocalDate fromDate, LocalDate to, IATACode city, Integer numberOfAdults);
+	public Collection<BestHotel> retriveBestHotels(BestHotelDTO bestHotelDto);
 
 }

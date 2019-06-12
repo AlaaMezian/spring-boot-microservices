@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.maf.besthotels.domain.model.BestHotel;
+import com.maf.besthotels.dto.BestHotelDTO;
 import com.maf.besthotels.repository.IATACode;
 import com.maf.besthotels.service.BestHotelsService;
 
@@ -33,7 +34,8 @@ public class BestHotelsController {
 	@RequestMapping(value = "/BestHotels", method = RequestMethod.GET)
 	public Collection<BestHotel> retriveBestHotels(@RequestParam  @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate fromDate ,
 			@RequestParam   @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate toDate , @RequestParam IATACode city , @RequestParam Integer numberOfAdults) {
-		Collection<BestHotel> bestHotels = bestHotelService.retriveBestHotels(fromDate,toDate,city,numberOfAdults);
+		BestHotelDTO bestHotelDTO = new BestHotelDTO(fromDate,toDate,city,numberOfAdults);
+		Collection<BestHotel> bestHotels = bestHotelService.retriveBestHotels(bestHotelDTO);
 		return bestHotels;
 	}
 }
