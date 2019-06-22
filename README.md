@@ -41,4 +41,4 @@ To run and test the project please run the following respectively
   for both best hotel and crazy hotel micro service
   - add Load Balancing Ribbons to microservice .
 
-please feel free to :star:  happy programming :smiley: :v: 
+please feel free to :star:  happy programming :v: 
