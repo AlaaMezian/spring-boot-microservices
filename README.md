@@ -25,7 +25,7 @@ To run and test the project please run the following respectively
   - Eruka Naming Server (must be first)
   - Best Hotel Serivce 
   - Crazy Hotel Service 
-  - Aggregate Hotler Serivce 
+  - Aggregate Hotel Serivce 
   - Available Hotel Service (Consumer Service)
   
   After luanching the projects ,testing the main consumer service available hotel can be done through swagger at: 
