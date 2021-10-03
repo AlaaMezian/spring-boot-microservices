@@ -1,8 +1,8 @@
 # Spring Boot MicroService Bridge Solution
 
-this is a solution based on micro-service architecture to easily add / remove services providers without effecting other providers and without effecting the main services consumer.
+This is a solution based on micro-service architecture to easily add / remove services providers without effecting other providers and without effecting the main services consumer.
 
-in this solution i used spring boot and spring cloud to implement microservice archtiture here are some of the modules used in the solution: 
+In this solution i used spring boot and spring cloud to implement microservice archtiture here are some of the modules used in the solution: 
   - Service Discovery (Eureka Naming Server)
   - Feign Rest Client
   - Hystrix for fault tolerance
@@ -41,4 +41,4 @@ To run and test the project please run the following respectively
   for both best hotel and crazy hotel micro service
   - add Load Balancing Ribbons to microservice .
 
-please feel free to :star:  happy programming :v: 
+Please feel free to :star:  happy programming :v: 
