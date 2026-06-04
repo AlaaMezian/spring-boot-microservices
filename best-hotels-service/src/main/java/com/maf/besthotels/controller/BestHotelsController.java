@@ -17,7 +17,7 @@ import com.maf.besthotels.service.BestHotelsService;
 
 @RestController
 public class BestHotelsController {
-
+//Hi i am there
 	@Autowired
 	private BestHotelsService bestHotelService;
 
